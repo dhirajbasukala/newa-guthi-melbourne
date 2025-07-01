@@ -27,24 +27,27 @@ export default function Page() {
     return (
         <div className="flex flex-col gap-12 sm:gap-16">
             <section>
-                <ContextAlert className="mb-6" />
-                <h1 className="mb-4">Netlify Platform Starter - Next.js</h1>
-                <p className="mb-6 text-lg">Get started with Next.js and Netlify in seconds.</p>
-                <Link href="https://docs.netlify.com/frameworks/next-js/overview/" className="btn btn-lg sm:min-w-64">
-                    Read the Docs
-                </Link>
+                {/* <ContextAlert className="mb-6" /> */}
+                <h1 className="mb-4">Newa Guthi Melbourne</h1>
+                <p className="mb-0 text-lg">We are currently under development. Please visit us later. </p>
+                <p className="mb-6 text-lg font-light">
+                    If you have any query or just want to say hello, contact us at{' '}
+                    <a className="text-orange-400 underline-offset-4 underline" href="mailto:hello@newaguthi.org.au">
+                        hello@newaguthi.org.au
+                    </a>
+                </p>
             </section>
-            {!!ctx && (
-                <section className="flex flex-col gap-4">
-                    <Markdown content={contextExplainer} />
-                    <RuntimeContextCard />
-                </section>
-            )}
-            <section className="flex flex-col gap-4">
-                <Markdown content={preDynamicContentExplainer} />
-                <RandomQuote />
-                <Markdown content={postDynamicContentExplainer} />
-            </section>
+            {/* {!!ctx && ( */}
+            {/*     <section className="flex flex-col gap-4"> */}
+            {/*         <Markdown content={contextExplainer} /> */}
+            {/*         <RuntimeContextCard /> */}
+            {/*     </section> */}
+            {/* )} */}
+            {/* <section className="flex flex-col gap-4"> */}
+            {/*     <Markdown content={preDynamicContentExplainer} /> */}
+            {/*     <RandomQuote /> */}
+            {/*     <Markdown content={postDynamicContentExplainer} /> */}
+            {/* </section> */}
         </div>
     );
 }
