@@ -32,8 +32,8 @@ export default function Page() {
                 <p className="mb-0 text-lg">We are currently under development. Please visit us later. </p>
                 <p className="mb-6 text-lg font-light">
                     If you have any query or just want to say hello, contact us at{' '}
-                    <a className="text-orange-400 underline-offset-4 underline" href="mailto:hello@newaguthi.org.au">
-                        hello@newaguthi.org.au
+                    <a className="text-orange-400 underline-offset-4 underline" href="mailto:mynewaguthi@gmail.com">
+                        mynewaguthi@gmail.com
                     </a>
                 </p>
             </section>
