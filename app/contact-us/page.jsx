@@ -15,9 +15,9 @@ export default function Page() {
                     <div className="flex flex-col md:flex-row">
                         <div>
                             <p className="mb-6 text-lg font-normal">
-                                Connect with fellow members of the Newar community in Melbourne. Whether you're looking
-                                to preserve traditions, make new connections, or learn about our rich cultural heritage,
-                                we welcome you.
+                                Connect with fellow members of the Newar community in Melbourne. Whether you&apos;re
+                                looking to preserve traditions, make new connections, or learn about our rich cultural
+                                heritage, we welcome you.
                             </p>
                         </div>
                     </div>
