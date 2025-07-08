@@ -1,70 +1,72 @@
 import Link from 'next/link';
-import { Card } from 'components/card';
-import { ContextAlert } from 'components/context-alert';
-import { Markdown } from 'components/markdown';
-import { RandomQuote } from 'components/random-quote';
-import { getNetlifyContext } from 'utils';
-
-const contextExplainer = `
-The card below is rendered on the server based on the value of \`process.env.CONTEXT\` 
-([docs](https://docs.netlify.com/configure-builds/environment-variables/#build-metadata)):
-`;
-
-const preDynamicContentExplainer = `
-The card content below is fetched by the client-side from \`/quotes/random\` (see file \`app/quotes/random/route.js\`) with a different quote shown on each page load:
-`;
-
-const postDynamicContentExplainer = `
-On Netlify, Next.js Route Handlers are automatically deployed as [Serverless Functions](https://docs.netlify.com/functions/overview/).
-Alternatively, you can add Serverless Functions to any site regardless of framework, with acccess to the [full context data](https://docs.netlify.com/functions/api/).
-
-And as always with dynamic content, beware of layout shifts & flicker! (here, we aren't...)
-`;
-
-const ctx = getNetlifyContext();
+import { ArrowRight, Heart, Users, Globe } from 'lucide-react';
+import Image from 'next/image';
+import jatraPic from 'public/images/jatra.jpg';
 
 export default function Page() {
     return (
         <div className="flex flex-col gap-12 sm:gap-16">
-            <section>
-                {/* <ContextAlert className="mb-6" /> */}
-                <h1 className="mb-4">Newa Guthi Melbourne</h1>
-                <p className="mb-0 text-lg">We are currently under development. Please visit us later. </p>
-                <p className="mb-6 text-lg font-light">
-                    If you have any query or just want to say hello, contact us at{' '}
-                    <a className="text-orange-400 underline-offset-4 underline" href="mailto:mynewaguthi@gmail.com">
-                        mynewaguthi@gmail.com
-                    </a>
-                </p>
+            <section className="relative min-h-screen flex flex-col verflow-hidden bg-gradient-to-br from-heritage-cream via-white to-heritage-cream">
+                <div className="mb-8 delay-200">
+                    <h1 className="font-playfair text-4xl mb-10 md:text-6xl font-bold  ">Newa Guthi Melbourne</h1>
+                    <h2 className="text-xl mb-6 md:text-2xl text-orange-500 font-light">
+                        Preserving Heritage, Building Community
+                    </h2>
+                    <div className="flex flex-col md:flex-row">
+                        <div>
+                            <p className="mb-6 text-lg font-light">
+                                <span className="font-medium">Newa Guthi Melbourne</span> is a traditional social and
+                                cultural organization dedicated to the Newar community in Victoria.
+                            </p>
+                            <p className="mb-6 text-lg font-light">
+                                We are dedicated to uniting the Newar community in Victoria through celebration and
+                                preservation of our shared cultural heritage, languages, traditions, and values.
+                            </p>
+                        </div>
+                        <Image
+                            src={jatraPic}
+                            className="md:-mt-10 ml-5 w-auto md:h-48"
+                            alt="newa guthi melbourne logo"
+                        />
+                    </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-4 mb-12 animate-fade-in-up delay-500">
+                    <div className="flex flex-col items-center p-6">
+                        <div className="w-16 h-16 bg-heritage-orange rounded-full flex items-center justify-center mb-4">
+                            <Heart strokeWidth="1" className="w-16 h-16 text-orange-400" />
+                        </div>
+                        <h3 className="font-playfair text-xl font-semibold text-heritage-brown mb-2">Heritage</h3>
+                        <p className="text-heritage-brown/70 text-center ">
+                            Preserving Newa traditions for future generations
+                        </p>
+                    </div>
+
+                    <div className="flex flex-col items-center p-6">
+                        <div className="w-16 h-16 bg-heritage-gold rounded-full flex items-center justify-center mb-4">
+                            <Users strokeWidth="1" className="w-16 h-16 text-orange-400" />
+                        </div>
+                        <h3 className="font-playfair text-xl font-semibold text-heritage-brown mb-2">Community</h3>
+                        <p className="text-heritage-brown/70 text-center">Building connections and support networks</p>
+                    </div>
+
+                    <div className="flex flex-col items-center p-6">
+                        <div className="w-16 h-16 bg-heritage-orange rounded-full flex items-center justify-center mb-4">
+                            <Globe strokeWidth="1" className="w-16 h-16 text-orange-400" />
+                        </div>
+                        <h3 className="font-playfair text-xl font-semibold text-heritage-brown mb-2">Culture</h3>
+                        <p className="text-heritage-brown/70 text-center">Promoting awareness and education</p>
+                    </div>
+                </div>
+                <div className="animate-fade-in-up mt-10 delay-700">
+                    <Link href="/about-us" className=" flex flex-row no-underline">
+                        <span className=" flex flex-row  w-auto no-underline bg-orange-400 hover:bg-orange-500 text-white font-normal px-8 py-4  text-lg rounded-full transition-all duration-300 hover:scale-105">
+                            Learn More About Us
+                            <ArrowRight strokeWidth="1" className="ml-2 w-8 h-8 " />
+                        </span>
+                    </Link>
+                </div>
             </section>
-            {/* {!!ctx && ( */}
-            {/*     <section className="flex flex-col gap-4"> */}
-            {/*         <Markdown content={contextExplainer} /> */}
-            {/*         <RuntimeContextCard /> */}
-            {/*     </section> */}
-            {/* )} */}
-            {/* <section className="flex flex-col gap-4"> */}
-            {/*     <Markdown content={preDynamicContentExplainer} /> */}
-            {/*     <RandomQuote /> */}
-            {/*     <Markdown content={postDynamicContentExplainer} /> */}
-            {/* </section> */}
         </div>
     );
-}
-
-function RuntimeContextCard() {
-    const title = `Netlify Context: running in ${ctx} mode.`;
-    if (ctx === 'dev') {
-        return (
-            <Card title={title}>
-                <p>Next.js will rebuild any page you navigate to, including static pages.</p>
-            </Card>
-        );
-    } else {
-        return (
-            <Card title={title}>
-                <p>This page was statically-generated at build time.</p>
-            </Card>
-        );
-    }
 }
