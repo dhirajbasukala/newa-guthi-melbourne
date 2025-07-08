@@ -1,5 +1,3 @@
-import Link from 'next/link';
-import { Card } from 'components/card';
 import { getNetlifyContext } from 'utils';
 import { Mail, MapPin, Phone, ArrowRight, Heart, Users, Globe } from 'lucide-react';
 
@@ -7,10 +5,9 @@ const ctx = getNetlifyContext();
 export default function Page() {
     return (
         <div className="flex flex-col gap-12 sm:gap-16">
-            <section className="relative min-h-screen flex flex-col verflow-hidden bg-gradient-to-br from-heritage-cream via-white to-heritage-cream">
+            <section className="relative flex flex-col verflow-hidden bg-gradient-to-br from-heritage-cream via-white to-heritage-cream">
                 <div className="mb-8 delay-200">
-                    <h1 className="font-playfair text-4xl md:text-6xl font-bold  ">Join our community</h1>
-                    <div className="w-24 h-1 bg-heritage-gold mx-auto mb-6"></div>
+                    <h1 className="font-playfair mb-10 text-4xl md:text-6xl font-bold  ">Join our community</h1>
                     <p className="text-xl mb-6 md:text-2xl text-orange-500 font-light">Stay conntected</p>
                     <div className="flex flex-col md:flex-row">
                         <div>

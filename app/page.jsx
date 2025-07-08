@@ -6,7 +6,7 @@ import jatraPic from 'public/images/jatra.jpg';
 export default function Page() {
     return (
         <div className="flex flex-col gap-12 sm:gap-16">
-            <section className="relative min-h-screen flex flex-col verflow-hidden bg-gradient-to-br from-heritage-cream via-white to-heritage-cream">
+            <section className="relative flex flex-col verflow-hidden bg-gradient-to-br from-heritage-cream via-white to-heritage-cream">
                 <div className="mb-8 delay-200">
                     <h1 className="font-playfair text-4xl mb-10 md:text-6xl font-bold  ">Newa Guthi Melbourne</h1>
                     <h2 className="text-xl mb-6 md:text-2xl text-orange-500 font-light">
@@ -61,7 +61,7 @@ export default function Page() {
                 <div className="animate-fade-in-up mt-10 delay-700">
                     <Link href="/about-us" className=" flex flex-row no-underline">
                         <span className=" flex flex-row  w-auto no-underline bg-orange-400 hover:bg-orange-500 text-white font-normal px-8 py-4  text-lg rounded-full transition-all duration-300 hover:scale-105">
-                            Learn More About Us
+                            Learn more about us
                             <ArrowRight strokeWidth="1" className="ml-2 w-8 h-8 " />
                         </span>
                     </Link>
