@@ -40,10 +40,8 @@ export default function Page() {
                                 <h3 className="font-normal mb-2"> Sponsorship</h3>
                                 <p>Sponsorship opportunities are available at different tiers</p>
                                 <ul className="mt-2">
-                                    <li>$10,000 AUD (Platinum Tier)</li>
-                                    <li>$5,000 AUD</li>
-                                    <li>$3,000 AUD (One Unified Tier)</li>
-                                    <li>$1,000 AUD (One Unified Tier)</li>
+                                    <li>$3,000 AUD (Gold Tier)</li>
+                                    <li>$1,000 AUD (Silver Tier)</li>
                                 </ul>
                             </div>
                         </div>
