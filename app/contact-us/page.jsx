@@ -1,11 +1,11 @@
 import { getNetlifyContext } from 'utils';
-import { Mail, MapPin, Phone, ArrowRight, Heart, Users, Globe } from 'lucide-react';
+import { Mail, MapPin, Users } from 'lucide-react';
 
 const ctx = getNetlifyContext();
 export default function Page() {
     return (
         <div className="flex flex-col gap-12 sm:gap-16">
-            <section className="relative flex flex-col verflow-hidden bg-gradient-to-br from-heritage-cream via-white to-heritage-cream">
+            <section className="relative flex flex-col">
                 <div className="mb-8 delay-200">
                     <h1 className="font-playfair mb-10 text-4xl md:text-6xl font-bold  ">Join our community</h1>
                     <p className="text-xl mb-6 md:text-2xl text-orange-500 font-light">Stay conntected</p>

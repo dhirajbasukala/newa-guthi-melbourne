@@ -1,12 +1,14 @@
-import Link from 'next/link';
-import { ArrowRight, Heart, Users, Globe } from 'lucide-react';
 import Image from 'next/image';
 import jatraPic from 'public/images/jatra.jpg';
+
+export const metadata = {
+    title: 'Newa Guthi Melbourne: Events and Celebration'
+};
 
 export default function Page() {
     return (
         <div className="flex flex-col gap-12 sm:gap-16">
-            <section className="relative flex flex-col verflow-hidden ">
+            <section className="relative flex flex-col">
                 <div className="mb-8 delay-200">
                     <h1 className="font-playfair text-4xl mb-10 md:text-6xl font-bold  ">Events & Celebration</h1>
                     <h2 className="text-xl mb-6 md:text-2xl text-orange-500 font-light">

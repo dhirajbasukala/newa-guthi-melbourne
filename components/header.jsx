@@ -8,6 +8,8 @@ const navItems = [
     { linkText: 'Home', href: '/' },
     { linkText: 'About us', href: '/about-us' },
     { linkText: 'Events', href: '/events' },
+    { linkText: 'Members', href: '/members' },
+
     { linkText: 'Contact us', href: '/contact-us' }
 ];
 

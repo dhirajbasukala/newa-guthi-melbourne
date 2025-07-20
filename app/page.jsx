@@ -2,12 +2,13 @@ import Link from 'next/link';
 import { ArrowRight, Heart, Users, Globe } from 'lucide-react';
 import Image from 'next/image';
 import jatraPic from 'public/images/jatra.jpg';
+import lakhe1Pic from 'public/images/lakhe-1.jpg';
 
 export default function Page() {
     return (
-        <div className="flex flex-col gap-12 sm:gap-16">
-            <section className="relative flex flex-col verflow-hidden bg-gradient-to-br from-heritage-cream via-white to-heritage-cream">
-                <div className="mb-8 delay-200">
+        <div className="flex flex-col gap-0 sm:gap-0">
+            <section className="relative flex flex-col ">
+                <div className="mb-8 200">
                     <h1 className="font-playfair text-4xl mb-10 md:text-6xl font-bold  ">Newa Guthi Melbourne</h1>
                     <h2 className="text-xl mb-6 md:text-2xl text-orange-500 font-light">
                         Preserving Heritage, Building Community
@@ -30,7 +31,19 @@ export default function Page() {
                         />
                     </div>
                 </div>
-
+                <section className="mb-12">
+                    <a href="/events" className="cursor-pointer no-underline text-white hover:text-orange-500">
+                        <div className="relative w-full h-80 rounded flex overflow-hidden justify-center items-center">
+                            <div className="absolute top-2/3 right-8 text-right  ">
+                                <h2 className="font-stretch-100% font-extralight text-4xl text-shadow-2xs ">
+                                    Indra Jatra
+                                </h2>
+                                <p className="italic text-right">honoring the deities Indra and Kumari</p>
+                            </div>
+                            <Image src={lakhe1Pic} className="w-full h-auto shrink-0" alt="newa guthi melbourne logo" />
+                        </div>
+                    </a>
+                </section>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-4 mb-12 animate-fade-in-up delay-500">
                     <div className="flex flex-col items-center p-6">
                         <div className="w-16 h-16 bg-heritage-orange rounded-full flex items-center justify-center mb-4">

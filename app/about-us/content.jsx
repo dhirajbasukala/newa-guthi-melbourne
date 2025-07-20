@@ -42,7 +42,7 @@ const AboutSection = () => {
     ];
 
     return (
-        <section className="bg-white">
+        <section>
             {/* Section header */}
             <div className="mb-16">
                 <div className="w-24 h-1 bg-heritage-gold mx-auto mb-8"></div>
