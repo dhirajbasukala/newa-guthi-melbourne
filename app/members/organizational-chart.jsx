@@ -16,7 +16,7 @@ const OrganizationChart = () => {
             },
             {
                 title: 'Secretary',
-                name: 'Sushant Dangol (Simon)',
+                name: 'Susanta Dangol (Simon)',
                 image: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=150&h=150&fit=crop&crop=face'
             },
             {
@@ -122,7 +122,7 @@ const OrganizationChart = () => {
 
                 {/* Connection Line */}
                 <div className="flex justify-center">
-                    <div className="w-px h-8 bg-orange-200 "></div>
+                    <div className="w-px h-8 bg-orange-200"></div>
                 </div>
 
                 {/* Level 3 - Committee Chairs */}
@@ -131,6 +131,17 @@ const OrganizationChart = () => {
                         <PersonCard key={index} person={person} level={3} />
                     ))}
                 </div>
+            </div>
+            <div className="mt-10 hidden">
+                <h3 className="font-playfair text-2xl font-normal mb-3">Advisers</h3>
+                <ul>
+                    <li>Ranjan Baidya</li>
+                    <li>Rajan Maskey</li>
+                    <li>Suresh Hada</li>
+                    <li>Ram Kumar Shrestha</li>
+                    <li>Raju Shakya</li>
+                    <li>Suresh Maharjan</li>
+                </ul>
             </div>
         </div>
     );

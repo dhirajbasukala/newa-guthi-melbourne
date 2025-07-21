@@ -13,7 +13,7 @@ const events = [
         longDescription: '',
         about: {
             title: 'About Indra Jatra',
-            content: `Indra jatra, also known asyenya punhi, is a significant and vibrant festival celebrated by the nepali and especially the newar community. It is one of the oldest and grandest festivals in kathmandu, nepal, with a history spanning over eight centuries.
+            content: `Indra jatra, also known as yenya punhi, is a significant and vibrant festival celebrated by the nepali and especially the newar community. It is one of the oldest and grandest festivals in kathmandu, nepal, with a history spanning over eight centuries.
 
 The festival is a vibrant tribute to Lord Indra, the Hindu god of rain and prosperity. It is a spiritual thanksgiving and a call for abundance. Rich in cultural symbolism, religious rituals, and communal harmony, it reflects the traditions of the Nepalese community. The festival serves as a platform for cultural expression and unity among the Nepalese diaspora.
 
@@ -46,7 +46,7 @@ export default function Page() {
                     </h2>
                     <div className="flex flex-col md:flex-row">
                         <div>
-                            <h2 className="font-normal">Indra jatra - Yenya punhi 2025 celebration</h2>
+                            <h2 className="font-normal">Indra Jatra - Yenya Punhi Melbourne 2025 celebration</h2>
                             <Image
                                 src={indraJatra}
                                 className="w-full md:h-auto rounded-xl"
@@ -55,8 +55,8 @@ export default function Page() {
                             <div className="bg-orange-50 px-5 my-5 py-6 text-gray-700 rounded-xl">
                                 <h3 className="font-normal mb-2">Event details</h3>
                                 <p>
-                                    <span className="font-semibold">Event name: </span> Indra jatra -- yenya punhi 2025
-                                    celebration
+                                    <span className="font-semibold">Event name: </span> Indra Jatra - Yenya Punhi
+                                    Melbourne 2025 celebration
                                 </p>
                                 <p>
                                     <span className="font-semibold">Date: </span>September 6, 2025 Saturday
@@ -73,25 +73,25 @@ export default function Page() {
                                     are expected.{' '}
                                 </p>
                             </div>
-                            <div className="bg-green-50 px-5 my-5 py-6 text-gray-700 rounded-xl">
-                                <h3 className="font-normal mb-2"> Sponsorship</h3>
-                                <p>Sponsorship opportunities are available at different tiers</p>
-                                <ul className="mt-2">
-                                    <li>$3,000 AUD (Gold Tier)</li>
-                                    <li>$1,000 AUD (Silver Tier)</li>
-                                </ul>
-                            </div>
+                            {/* <div className="bg-green-50 px-5 my-5 py-6 text-gray-700 rounded-xl"> */}
+                            {/*     <h3 className="font-normal mb-2"> Sponsorship</h3> */}
+                            {/*     <p>Sponsorship opportunities are available at different tiers</p> */}
+                            {/*     <ul className="mt-2"> */}
+                            {/*         <li>$3,000 AUD (Gold Tier)</li> */}
+                            {/*         <li>$1,000 AUD (Silver Tier)</li> */}
+                            {/*     </ul> */}
+                            {/* </div> */}
                         </div>
 
                         {/* <Image src={jatraPic} className=" ml-5 w-auto md:h-48" alt="newa guthi melbourne logo" /> */}
                     </div>
                     <div>
-                        <h3 className="font-normal mb-2 pb-2 border-b border-b-gray-200">About Indra jatra</h3>
+                        <h3 className="font-normal mb-2 pb-2 border-b border-b-gray-200">About Indra Jatra</h3>
                         <p className="mb-6 text-lg font-light">
-                            <span className="font-medium">Indra jatra</span>, also known as
-                            <span className="font-medium">yenya punhi</span>, is a significant and vibrant festival
+                            <span className="font-medium">Indra Jatra</span>, also known as
+                            <span className="font-medium"> Yenya Punhi</span>, is a significant and vibrant festival
                             celebrated by the nepali and especially the newar community. It is one of the oldest and
-                            grandest festivals in kathmandu, nepal, with a history spanning over eight centuries.{' '}
+                            grandest festivals in Kathmandu, Nepal, with a history spanning over eight centuries.
                         </p>
                         <p className="mb-6 text-lg font-light">
                             The festival is a vibrant tribute to Lord Indra, the Hindu god of rain and prosperity. It is
@@ -107,9 +107,9 @@ export default function Page() {
                             destination.
                         </p>
                         <p className="mb-6 text-lg font-light">
-                            The goal for the Melbourne celebration is to establish Indra Jatra as an annual cultural
-                            festival in Victoria and to pave the way for future celebrations of other traditional
-                            Nepalese festivals.
+                            The year 2025 marks the inaugural celebration of Indra Jatra in Victoria, with the goal of
+                            establishing it as an annual cultural festival and paving the way for future celebrations of
+                            other traditional Nepalese festivals.{' '}
                         </p>
                     </div>
                 </div>
