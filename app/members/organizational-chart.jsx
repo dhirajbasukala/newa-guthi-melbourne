@@ -1,4 +1,4 @@
-import { CircleUserRound } from 'lucide-react';
+import { CircleUserRound, User } from 'lucide-react';
 import Image from 'next/image';
 import imgPresident from 'public/images/members/maya-prasad-suwal.jpg';
 import imgVicePresident from 'public/images/members/maya-prasad-suwal.jpg';
@@ -117,9 +117,7 @@ const OrganizationChart = () => {
                             className="w-40 h-40 rounded-full mx-auto object-cover border-2 border-orange-100"
                         />
                     )}
-                    {person.image === '' && (
-                        <CircleUserRound strokeWidth="1" className="min-w-40 h-40 mr-4 text-orange-300" />
-                    )}
+                    {person.image === '' && <User strokeWidth="1" className="min-w-30 h-30 mr-4 text-orange-300" />}
                 </div>
                 <h4 className="font-playfair mb-1 ">{person.title}</h4>
                 {person.name && <p className="text-md  mb-2 font-semibold text-orange-500">{person.name}</p>}
@@ -160,7 +158,7 @@ const OrganizationChart = () => {
                 {/* Connection Line */}
                 <div className="flex flex-col items-center justify-center">
                     <div className="w-px h-8 bg-orange-200"></div>
-                    <h3 className="font-light mt-5 uppercase"> Executive members </h3>
+                    <h3 className="font-light mt-5 uppercase text-orange-400"> Executive members </h3>
                     <div className="w-px h-8 mt-2 bg-orange-200"></div>
                 </div>
 
@@ -173,7 +171,7 @@ const OrganizationChart = () => {
                 {/* Connection Line */}
                 <div className="flex flex-col items-center justify-center">
                     <div className="w-px h-8 bg-orange-200"></div>
-                    <h3 className="font-light mt-5 uppercase"> Advisors</h3>
+                    <h3 className="font-light mt-5 uppercase text-orange-400"> Advisors</h3>
                     <div className="w-px h-8 mt-2 bg-orange-200"></div>
                 </div>
 
