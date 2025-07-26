@@ -85,7 +85,7 @@ const OrganizationChart = () => {
         level4: [
             {
                 title: 'Advisor',
-                name: 'Rajan Vaidya',
+                name: 'Ranjan Vaidya',
                 image: imgRajanVaidya
             },
             {
