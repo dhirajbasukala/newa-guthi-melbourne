@@ -31,7 +31,16 @@ export default function Page() {
                                     </div>
                                     <div>
                                         <p className="font-semibold ">Location</p>
-                                        <p className="/70">Melbourne, Victoria</p>
+                                        <p className="">Melbourne, Victoria</p>
+                                    </div>
+                                </div>
+                                <div className="flex items-center">
+                                    <div className="w-12 h-12 rounded-lg flex items-center justify-center mr-4">
+                                        <MapPin strokeWidth="1" className="w-10 h-10 text-orange-400" />
+                                    </div>
+                                    <div>
+                                        <p className="font-semibold ">Phone</p>
+                                        <p> +61 402 556 696</p>
                                     </div>
                                 </div>
 
@@ -41,13 +50,13 @@ export default function Page() {
                                     </div>
                                     <div>
                                         <p className="font-semibold ">Email</p>
-                                        <p className="/70">
+                                        <p>
                                             <a
-                                                href="mailto:mynewaguthi@gmail.com"
-                                                alt="mailto:mynewaguthi@gmail.com"
+                                                href="mailto:info@newaguthi.org.au"
+                                                alt="mailto:info@newaguthi.org.au"
                                                 className="underline underline-offset-4"
                                             >
-                                                mynewaguthi@gmail.com
+                                                info@newaguthi.org.au
                                             </a>
                                         </p>
                                     </div>

@@ -1,32 +1,40 @@
-import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Heart } from 'lucide-react';
+import { Music2, Youtube, Facebook, Instagram } from 'lucide-react';
 
 export function Footer() {
     return (
         <footer className="w-full bg-white mt-16 ">
             <div className="flex justify-end space-x-3 mr-4">
                 <a
-                    href="#facebook"
+                    href="https://www.facebook.com/profile.php?id=61567300839385"
                     className="w-8 h-8  rounded-full flex items-center justify-center text-orange transition-colors"
-                    aria-label="Facebook"
-                    title="Facebook page"
+                    aria-label="Newa Guthi Melbourne Facebook"
+                    title="Newa Guthi Melbourne facebook page"
                 >
                     <Facebook strokeWidth="2" className="w-4 h-4 text-gray-500 hover:text-orange-500 " />
                 </a>
                 <a
-                    href="#instagram"
+                    href="https://www.instagram.com/newaguthimelbourne"
                     className="w-8 h-8  rounded-full flex items-center justify-center text-gray-500 hover:text-white  transition-colors"
-                    aria-label="Instagram"
-                    title="Instagram page"
+                    aria-label="Newa Guthi Melbourne Instagram"
+                    title="Newa Guthi Melbourtne Instagram page"
                 >
                     <Instagram strokeWidth="2" className="w-4 h-4 text-gray-500 hover:text-orange-500" />
                 </a>
                 <a
-                    href="#twitter"
+                    href="https://www.tiktok.com/@newaguthimelbourne"
                     className="w-8 h-8  rounded-full flex items-center justify-center text-white  transition-colors"
-                    aria-label="Twitter"
-                    title="Twitter link"
+                    aria-label="Newa Guthi Melbourne Tiktok"
+                    title="Newa Guthi Melbourne Tiktok"
                 >
-                    <Twitter strokeWidth="2" className="w-4 h-4 text-gray-500 hover:text-orange-500" />
+                    <Music2 strokeWidth="2" className="w-4 h-4 text-gray-500 hover:text-orange-500" />
+                </a>
+                <a
+                    href="http://www.youtube.com/@NewaGuthiMelbourne"
+                    className="w-8 h-8  rounded-full flex items-center justify-center text-white  transition-colors"
+                    aria-label="Newa Guthi Melbourne Youtube"
+                    title="Newa Guthi Melbourne Youtube"
+                >
+                    <Youtube strokeWidth="2" className="w-4 h-4 text-gray-500 hover:text-orange-500" />
                 </a>
             </div>
             <div className="flex flex-col md:flex-row justify-between max-w-4xl mx-auto grow px-4 py-8">

@@ -1,73 +1,107 @@
 import { CircleUserRound } from 'lucide-react';
+import Image from 'next/image';
+import imgPresident from 'public/images/members/maya-prasad-suwal.jpg';
+import imgVicePresident from 'public/images/members/maya-prasad-suwal.jpg';
+
+import imgSecretary from 'public/images/members/susanta-dongol.jpg';
+import imgTreasurer from 'public/images/members/surya-maharjan.jpg';
+// executive memebers
+import imgRajendraMaharjan from 'public/images/members/rajendra-maharjan.jpg';
+import imgSurajPradhan from 'public/images/members/suraj-pradhan.jpg';
+import imgBeenaMaharjan from 'public/images/members/beena-maharjan.jpg';
+// import imgAryanManandhar from 'public/images/members/aryan-mananadhar.jpg';
+// import imgSritiNakhanda from 'public/images/members/sriti-nakhanda.jpg';
+// import imgRajanTwayna from 'public/images/members/rajan-twayna.jpg';
+// import imgAnilDongol from 'public/images/members/anil-dongol.jpg';
+// advisor
+import imgRajanVaidya from 'public/images/members/rajan-vaidya.jpg';
+import imgMadhuriMaskeySharma from 'public/images/members/madhuri-maskey-sharma.jpg';
+import imgRajanMaskey from 'public/images/members/rajan-maskey.jpg';
+import imgSureshMaharjan from 'public/images/members/suresh-maharjan.jpg';
+
 const OrganizationChart = () => {
     const organizationStructure = {
         level1: [
             {
                 title: 'President',
                 name: 'Maya Prasad Suwal',
-                image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=150&h=150&fit=crop&crop=face'
+                image: imgPresident
             }
         ],
         level2: [
             {
                 title: 'Vice President',
                 name: 'Kumar Maharjan',
-                image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=150&h=150&fit=crop&crop=face'
+                image: '' //imgVicePresident
             },
             {
                 title: 'Secretary',
                 name: 'Susanta Dangol (Simon)',
-                image: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=150&h=150&fit=crop&crop=face'
+                image: imgSecretary
             },
             {
                 title: 'Treasurer',
                 name: 'Surya Maharjan',
-                image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=150&h=150&fit=crop&crop=face'
+                image: imgTreasurer
             }
         ],
         level3: [
             {
-                title: 'Executive members',
+                title: 'Executive member',
                 name: 'Rajendra Maharjan',
-                image: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=150&h=150&fit=crop&crop=face'
+                image: imgRajendraMaharjan
             },
             {
-                title: 'Executive members',
+                title: 'Executive member',
                 name: 'Suraj Pradhan',
-                image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=150&h=150&fit=crop&crop=face'
+                image: imgSurajPradhan
             },
             {
-                title: 'Executive members',
+                title: 'Executive member',
                 name: 'Beena Maharjan',
-                image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=150&h=150&fit=crop&crop=face'
+                image: imgBeenaMaharjan
             },
             {
-                title: 'Executive members',
+                title: 'Executive member',
                 name: 'Aryan Manandhar',
-                image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=150&h=150&fit=crop&crop=face'
+                image: '' // imgAryanManandhar
             },
             {
-                title: 'Executive members',
+                title: 'Executive member',
                 name: 'Sriti Nakhanda',
-                image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=150&h=150&fit=crop&crop=face'
+                image: '' // imgSritiNakhanda
             },
             {
-                title: 'Executive members',
+                title: 'Executive member',
                 name: 'Rajan Twayna',
-                image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=150&h=150&fit=crop&crop=face'
+                image: '' // imgRajanTwayna
             },
             {
-                title: 'Executive members',
+                title: 'Executive member',
                 name: 'Anil Dongol',
-                image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=150&h=150&fit=crop&crop=face'
+                image: '' // imgAnilDongol
             }
         ],
         level4: [
             {
-                title: 'Advisors',
-                description: 'Active community members participating in cultural activities and events',
-                count: '15+ Members',
-                image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=150&h=150&fit=crop&crop=face'
+                title: 'Advisor',
+                name: 'Rajan Vaidya',
+                image: imgRajanVaidya
+            },
+            {
+                title: 'Advisor',
+                name: 'Rajan Maskey',
+                image: imgRajanMaskey
+            },
+            {
+                title: 'Advisor',
+                name: 'Madhuri Maskey Sharma',
+                image: imgMadhuriMaskeySharma
+            },
+            {
+                title: 'Advisor',
+                name: 'Suresh Maharjan',
+                image: imgSureshMaharjan
             }
         ]
     };
@@ -76,13 +110,16 @@ const OrganizationChart = () => {
         <div className=" rounded-3xl bg-orange-50 hover:border-orange-500  hover:shadow-lg transition-shadow">
             <div className="p-6 text-center">
                 <div className="relative mb-3 flex justify-center ">
-                    {/* <img */}
-                    {/*     src={person.image} */}
-                    {/*     alt={person.name || person.title} */}
-                    {/*     className="w-20 h-20 rounded-full mx-auto object-cover border-2 border-heritage-orange/30" */}
-                    {/* /> */}
-                    {/* <User strokeWidth="2" className="min-w-20 h-20 mr-4 text-orange-500" /> */}
-                    <CircleUserRound strokeWidth="1" className="min-w-20 h-20 mr-4 text-orange-300" />
+                    {person.image !== '' && (
+                        <Image
+                            src={person.image}
+                            alt={person.name || person.title}
+                            className="w-40 h-40 rounded-full mx-auto object-cover border-2 border-orange-100"
+                        />
+                    )}
+                    {person.image === '' && (
+                        <CircleUserRound strokeWidth="1" className="min-w-40 h-40 mr-4 text-orange-300" />
+                    )}
                 </div>
                 <h4 className="font-playfair mb-1 ">{person.title}</h4>
                 {person.name && <p className="text-md  mb-2 font-semibold text-orange-500">{person.name}</p>}
@@ -121,8 +158,10 @@ const OrganizationChart = () => {
                 </div>
 
                 {/* Connection Line */}
-                <div className="flex justify-center">
+                <div className="flex flex-col items-center justify-center">
                     <div className="w-px h-8 bg-orange-200"></div>
+                    <h3 className="font-light mt-5 uppercase"> Executive members </h3>
+                    <div className="w-px h-8 mt-2 bg-orange-200"></div>
                 </div>
 
                 {/* Level 3 - Committee Chairs */}
@@ -131,17 +170,19 @@ const OrganizationChart = () => {
                         <PersonCard key={index} person={person} level={3} />
                     ))}
                 </div>
-            </div>
-            <div className="mt-10 hidden">
-                <h3 className="font-playfair text-2xl font-normal mb-3">Advisers</h3>
-                <ul>
-                    <li>Ranjan Baidya</li>
-                    <li>Rajan Maskey</li>
-                    <li>Suresh Hada</li>
-                    <li>Ram Kumar Shrestha</li>
-                    <li>Raju Shakya</li>
-                    <li>Suresh Maharjan</li>
-                </ul>
+                {/* Connection Line */}
+                <div className="flex flex-col items-center justify-center">
+                    <div className="w-px h-8 bg-orange-200"></div>
+                    <h3 className="font-light mt-5 uppercase"> Advisors</h3>
+                    <div className="w-px h-8 mt-2 bg-orange-200"></div>
+                </div>
+
+                {/* Level 4 - Committee Chairs */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+                    {organizationStructure.level4.map((person, index) => (
+                        <PersonCard key={index} person={person} level={3} />
+                    ))}
+                </div>
             </div>
         </div>
     );
