@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { ArrowRight, Heart, Users, Globe } from 'lucide-react';
 import Image from 'next/image';
 import jatraPic from 'public/images/jatra.jpg';
-import lakhe1Pic from 'public/images/lakhe-1.jpg';
+import bhairabKumari from 'public/images/bhairab-kumari.jpg';
 
 export default function Page() {
     return (
@@ -33,14 +33,18 @@ export default function Page() {
                 </div>
                 <section className="mb-12">
                     <a href="/events" className="cursor-pointer no-underline text-white hover:text-orange-500">
-                        <div className="relative w-full h-80 rounded flex overflow-hidden justify-center items-center">
-                            <div className="absolute top-2/3 right-8 text-right  ">
-                                <h2 className="font-stretch-100% font-extralight text-4xl text-shadow-2xs ">
+                        <div className="relative w-full h-80 rounded-2xl flex overflow-hidden justify-center items-center">
+                            <div className="absolute top-2/3 right-8 text-right p-3 backdrop-opacity-10 ">
+                                <h2 className="font-stretch-100% font-extralight text-5xl text-shadow-2xs ">
                                     Indra Jatra
                                 </h2>
                                 <p className="italic text-right">honoring the deities Indra and Kumari</p>
                             </div>
-                            <Image src={lakhe1Pic} className="w-full h-auto shrink-0" alt="newa guthi melbourne logo" />
+                            <Image
+                                src={bhairabKumari}
+                                className="w-full h-auto shrink-0"
+                                alt="newa guthi melbourne logo"
+                            />
                         </div>
                     </a>
                 </section>

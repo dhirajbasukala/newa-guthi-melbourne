@@ -1,8 +1,7 @@
-import { CircleUserRound, User } from 'lucide-react';
+import { User } from 'lucide-react';
 import Image from 'next/image';
 import imgPresident from 'public/images/members/maya-prasad-suwal.jpg';
-import imgVicePresident from 'public/images/members/maya-prasad-suwal.jpg';
-
+import imgVicePresident from 'public/images/members/kumar-maharjan.jpg';
 import imgSecretary from 'public/images/members/susanta-dongol.jpg';
 import imgTreasurer from 'public/images/members/surya-maharjan.jpg';
 // executive memebers
@@ -12,7 +11,7 @@ import imgBeenaMaharjan from 'public/images/members/beena-maharjan.jpg';
 // import imgAryanManandhar from 'public/images/members/aryan-mananadhar.jpg';
 // import imgSritiNakhanda from 'public/images/members/sriti-nakhanda.jpg';
 // import imgRajanTwayna from 'public/images/members/rajan-twayna.jpg';
-// import imgAnilDongol from 'public/images/members/anil-dongol.jpg';
+import imgAnilDongol from 'public/images/members/anil-dongol.jpg';
 // advisor
 import imgRajanVaidya from 'public/images/members/rajan-vaidya.jpg';
 import imgMadhuriMaskeySharma from 'public/images/members/madhuri-maskey-sharma.jpg';
@@ -32,7 +31,7 @@ const OrganizationChart = () => {
             {
                 title: 'Vice President',
                 name: 'Kumar Maharjan',
-                image: '' //imgVicePresident
+                image: imgVicePresident
             },
             {
                 title: 'Secretary',
@@ -79,7 +78,7 @@ const OrganizationChart = () => {
             {
                 title: 'Executive member',
                 name: 'Anil Dongol',
-                image: '' // imgAnilDongol
+                image: imgAnilDongol
             }
         ],
         level4: [
@@ -107,7 +106,7 @@ const OrganizationChart = () => {
     };
 
     const PersonCard = ({ person, level }) => (
-        <div className=" rounded-3xl bg-orange-50 hover:border-orange-500  hover:shadow-lg transition-shadow">
+        <div className=" rounded-3xl bg-orange-50 hover:border-orange-500  hover:shadow-lg transition-shadow ">
             <div className="p-6 text-center">
                 <div className="relative mb-3 flex justify-center ">
                     {person.image !== '' && (
@@ -122,7 +121,6 @@ const OrganizationChart = () => {
                 <h4 className="font-playfair mb-1 ">{person.title}</h4>
                 {person.name && <p className="text-md  mb-2 font-semibold text-orange-500">{person.name}</p>}
                 {person.description && <p className="text-xs  mb-2">{person.description}</p>}
-                {person.count && <p className="text-sm font-medium ">{person.count}</p>}
                 {person.email && <p className="text-xs ">{person.email}</p>}
             </div>
         </div>
@@ -151,7 +149,7 @@ const OrganizationChart = () => {
                 {/* Level 2 - Executive Team */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
                     {organizationStructure.level2.map((person, index) => (
-                        <PersonCard key={index} person={person} level={2} />
+                        <PersonCard key={index} person={person} level={2} className="mb-6" />
                     ))}
                 </div>
 
