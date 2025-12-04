@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import ngmLogo from 'public/logo.jpeg';
+import ngmLogo from 'public/logo.png';
 import { usePathname } from 'next/navigation';
 
 const navItems = [
