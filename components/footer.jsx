@@ -7,38 +7,38 @@ export function Footer() {
                 <a
                     href="https://www.facebook.com/profile.php?id=61567300839385"
                     className="w-8 h-8  rounded-full flex items-center justify-center text-orange transition-colors"
-                    aria-label="Newa Guthi Melbourne Facebook"
-                    title="Newa Guthi Melbourne facebook page"
+                    aria-label="Newa Guthi Victoria Facebook"
+                    title="Newa Guthi Victoria facebook page"
                 >
                     <Facebook strokeWidth="2" className="w-4 h-4 text-gray-500 hover:text-orange-500 " />
                 </a>
                 <a
-                    href="https://www.instagram.com/newaguthimelbourne"
+                    href="https://www.instagram.com/newaguthiVictoria"
                     className="w-8 h-8  rounded-full flex items-center justify-center text-gray-500 hover:text-white  transition-colors"
-                    aria-label="Newa Guthi Melbourne Instagram"
+                    aria-label="Newa Guthi Victoria Instagram"
                     title="Newa Guthi Melbourtne Instagram page"
                 >
                     <Instagram strokeWidth="2" className="w-4 h-4 text-gray-500 hover:text-orange-500" />
                 </a>
                 <a
-                    href="https://www.tiktok.com/@newaguthimelbourne"
+                    href="https://www.tiktok.com/@newaguthiVictoria"
                     className="w-8 h-8  rounded-full flex items-center justify-center text-white  transition-colors"
-                    aria-label="Newa Guthi Melbourne Tiktok"
-                    title="Newa Guthi Melbourne Tiktok"
+                    aria-label="Newa Guthi Victoria Tiktok"
+                    title="Newa Guthi Victoria Tiktok"
                 >
                     <Music2 strokeWidth="2" className="w-4 h-4 text-gray-500 hover:text-orange-500" />
                 </a>
                 <a
-                    href="http://www.youtube.com/@NewaGuthiMelbourne"
+                    href="http://www.youtube.com/@NewaGuthiVictoria"
                     className="w-8 h-8  rounded-full flex items-center justify-center text-white  transition-colors"
-                    aria-label="Newa Guthi Melbourne Youtube"
-                    title="Newa Guthi Melbourne Youtube"
+                    aria-label="Newa Guthi Victoria Youtube"
+                    title="Newa Guthi Victoria Youtube"
                 >
                     <Youtube strokeWidth="2" className="w-4 h-4 text-gray-500 hover:text-orange-500" />
                 </a>
             </div>
             <div className="flex flex-col md:flex-row justify-between max-w-4xl mx-auto grow px-4 py-8">
-                <p className="text-sm">© 2025 Newa Guthi Melbourne Incorporated. All rights reserved.</p>
+                <p className="text-sm">© 2025 Newa Guthi Victoria Incorporated. All rights reserved.</p>
                 <div className="mt-5 md:mt-0">
                     <div className="flex items-center space-x-4 text-sm no-underline">
                         <a
