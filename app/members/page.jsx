@@ -1,7 +1,7 @@
 import OrganizationChart from './organizational-chart';
 
 export const metadata = {
-    title: 'Newa Guthis Melbourne: Our Teamd and Members'
+    title: 'Newa Guthis Victoria: Our Teamd and Members'
 };
 
 export default async function page() {
@@ -22,7 +22,7 @@ export default async function page() {
                 <div>
                     <p className="text-lg md:text-xl font-light  max-w-4xl mx-auto">
                         Join our vibrant community dedicated to preserving Newar heritage and fostering cultural
-                        connections in Melbourne. Our membership is open and inclusive, welcoming individuals and
+                        connections in Victoria. Our membership is open and inclusive, welcoming individuals and
                         families from diverse backgrounds.
                     </p>
                 </div>
