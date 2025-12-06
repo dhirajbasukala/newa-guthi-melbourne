@@ -47,7 +47,7 @@ const AboutSection = () => {
             <div className="mb-16">
                 <div className="w-24 h-1 bg-heritage-gold mx-auto mb-8"></div>
                 <p className="text-lg md:text-xl font-light text-heritage-brown/80 max-w-4xl mx-auto ">
-                    <span className="font-normal">Newa Guthi Melbourne Incorporated</span> is a traditional social and
+                    <span className="font-normal">Newa Guthi Vectoria Incorporated</span> is a traditional social and
                     cultural organization dedicated to the Newar community in Victoria. Our core purpose is to unite the
                     Newar ethnic community by celebrating and preserving our shared cultural backgrounds, languages,
                     traditions, values, and beliefs.
@@ -77,7 +77,7 @@ const AboutSection = () => {
             <div className="p-8">
                 <h3 className="font-playfair text-2xl font-medium text-heritage-brown mb-4">Our Journey Forward</h3>
                 <p className="text-heritage-brown/80 font-light text-lg leading-relaxed">
-                    <span className="font-normal">Newa Guthi Melbourne</span> is registered with Consumer Affairs
+                    <span className="font-normal">Newa Guthi Victoria</span> is registered with Consumer Affairs
                     Victoria, marking an important milestone in our commitment to serving the Newar community with
                     official recognition and structure.
                 </p>
