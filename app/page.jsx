@@ -9,14 +9,14 @@ export default function Page() {
         <div className="flex flex-col gap-0 sm:gap-0">
             <section className="relative flex flex-col ">
                 <div className="mb-8 200">
-                    <h1 className="font-playfair text-4xl mb-10 md:text-6xl font-bold  ">Newa Guthi Melbourne</h1>
+                    <h1 className="font-playfair text-4xl mb-10 md:text-6xl font-bold  ">Newa Guthi Victoria</h1>
                     <h2 className="text-xl mb-6 md:text-2xl text-orange-500 font-light">
                         Preserving Heritage, Building Community
                     </h2>
                     <div className="flex flex-col md:flex-row">
                         <div>
                             <p className="mb-6 text-lg font-light">
-                                <span className="font-medium">Newa Guthi Melbourne</span> is a traditional social and
+                                <span className="font-medium">Newa Guthi Victoria</span> is a traditional social and
                                 cultural organization dedicated to the Newar community in Victoria.
                             </p>
                             <p className="mb-6 text-lg font-light">
@@ -27,7 +27,7 @@ export default function Page() {
                         <Image
                             src={jatraPic}
                             className="md:-mt-10 ml-5 w-auto md:h-48"
-                            alt="newa guthi melbourne logo"
+                            alt="newa guthi Victoria logo"
                         />
                     </div>
                 </div>
@@ -43,7 +43,7 @@ export default function Page() {
                             <Image
                                 src={bhairabKumari}
                                 className="w-full h-auto shrink-0"
-                                alt="newa guthi melbourne logo"
+                                alt="newa guthi Victoria logo"
                             />
                         </div>
                     </a>

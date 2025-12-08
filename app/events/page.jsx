@@ -3,7 +3,7 @@ import jatraPic from 'public/images/jatra.jpg';
 import indraJatra from 'public/images/indra-jatra.jpg';
 
 export const metadata = {
-    title: 'Newa Guthi Melbourne: Events and Celebration'
+    title: 'Newa Guthi Victoria: Events and Celebration'
 };
 
 const events = [
