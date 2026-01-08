@@ -38,7 +38,7 @@ export function Footer() {
                 </a>
             </div>
             <div className="flex flex-col md:flex-row justify-between max-w-4xl mx-auto grow px-4 py-8">
-                <p className="text-sm">© 2025 Newa Guthi Melbourne Incorporated. All rights reserved.</p>
+                <p className="text-sm">© 2025 Newa Guthi Victoria Incorporated. All rights reserved.</p>
                 <div className="mt-5 md:mt-0">
                     <div className="flex items-center space-x-4 text-sm no-underline">
                         <a
