@@ -13,7 +13,7 @@ export function Footer() {
                     <Facebook strokeWidth="2" className="w-4 h-4 text-gray-500 hover:text-orange-500 " />
                 </a>
                 <a
-                    href="https://www.instagram.com/newaguthimelbourne"
+                    href="https://www.instagram.com/newaguthivictoria"
                     className="w-8 h-8  rounded-full flex items-center justify-center text-gray-500 hover:text-white  transition-colors"
                     aria-label="Newa Guthi Victoria Instagram"
                     title="Newa Guthi Victoria Instagram page"
@@ -21,7 +21,7 @@ export function Footer() {
                     <Instagram strokeWidth="2" className="w-4 h-4 text-gray-500 hover:text-orange-500" />
                 </a>
                 <a
-                    href="https://www.tiktok.com/@newaguthimelbourne"
+                    href="https://www.tiktok.com/@newaguthivictoria"
                     className="w-8 h-8  rounded-full flex items-center justify-center text-white  transition-colors"
                     aria-label="Newa Guthi Victoria Tiktok"
                     title="Newa Guthi Victoria Tiktok"
