@@ -1,6 +1,6 @@
 import Content from './content.jsx';
 export const metadata = {
-    title: 'Newa Guthi Melbourne: About us'
+    title: 'Newa Guthi Victoria: About us'
 };
 
 export default async function page() {
@@ -9,7 +9,7 @@ export default async function page() {
             <section className="relative flex flex-col ">
                 <div className="mb-10 delay-200">
                     <h1 className="font-playfair text-4xl md:text-6xl font-bold  ">
-                        <span className="text-orange-500 uppercase mr-5 block ">About</span>Newa Guthi Melbourne
+                        <span className="text-orange-500 uppercase mr-5 block ">About</span>Newa Guthi Victoria
                     </h1>
                 </div>
                 <div>
